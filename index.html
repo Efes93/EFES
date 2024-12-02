@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;600;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+   
+    <link rel="stylesheet" href="styles.css" />
+    
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="backdrop active"></div>
+    <div class="header">
+      <p class="name">rock <br />
+      paper</br>
+      scissor</p>
+      <div class="score-tab">
+        <h1 class="score-header">Score</h1>
+        <span class="score">12</span>
+      </div>
+    </div>
+
+
+    
+    <section class="game ">
+      <div class="game-container1  game-active ">
+
+        <svg class="triangle" width="313" height="278" xmlns="http://www.w3.org/2000/svg"><path  class="triangle-sm" stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/></svg>
+    
+
+        <button class="paper btn-game">
+          <img class="size-icon" draggable="false" src="./images/icon-paper.svg" alt="">
+        </button>
+
+        <button class="scissors btn-game"> 
+           <img  class="size-icon" draggable="false" src="./images/icon-scissors.svg" alt="">
+        </button>
+
+        <button class="rock btn-game">
+          <img class="size-icon"  draggable="false" src="./images/icon-rock.svg" alt="">
+        </button>
+
+      </div>
+      <div class="game-container2  ">
+      
+        <div class="window2">
+        <div class="player">
+          <h1>You Picked</h1>
+          
+          <span class="player-pick black-circle">
+            <span class="wrapper-btn"></span>
+          </span>
+      
+        </div>
+
+        <div class="result  ">
+          <h1 class="result-condition"> </h1>
+          <button class="result-btn">PLAY AGAIN</button>
+        </div>
+
+        <div class="computer">
+          <h1>The house picked</h1>
+          <span class="computer-pick black-circle">
+            <span class="wrapper-btn-2"></span>
+          </span>
+        </div>
+      </div>
+       
+
+      </div>
+
+
+    </section> 
+
+
+    <button class="rules">Rules</button>
+
+    <div class="modal active ">
+        <div class="modal-header">
+        <h1 class="modal-rules">Rules</h1>
+        <button class="modal-close">❌</button>
+        </div>
+      <img class="modal-img" draggable="false" src="./images/image-rules.svg" alt="">
+    </div>
+
+ 
+    <script src="index.js"></script>
+  </body>
+</html>
